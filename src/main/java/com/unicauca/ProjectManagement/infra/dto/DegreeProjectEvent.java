@@ -6,8 +6,10 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
-@Getter @Setter
-public class DegreeProjectRequest {
+@Getter
+@Setter
+public class DegreeProjectEvent {
+    private Long id;
 
     private String title;
 
@@ -17,7 +19,7 @@ public class DegreeProjectRequest {
 
     private String modality;
 
-    private List<FileRequest> files = new ArrayList<FileRequest>();
+    private List<FileEvent> files = new ArrayList<FileEvent>();
 
     private List<Long> studentsId = new ArrayList<Long>();
 
@@ -25,6 +27,5 @@ public class DegreeProjectRequest {
 
     private List<Long> codirectorsId = new ArrayList<Long>();
 
-    private StateRequest state;
-
+    private StateEvent state;
 }

@@ -3,8 +3,11 @@ package com.unicauca.ProjectManagement.infra.dto;
 import lombok.Getter;
 import lombok.Setter;
 
-public class StateRequest {
-    @Getter
-    @Setter
+@Getter @Setter
+public class StateEvent {
+
+    private Long id;
+
     private String name;
+
 }
